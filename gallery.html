@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Himanshu Kumar</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+
+<header>
+  <div class="onenavbar">
+    <span class="one">Me</span>
+    <span class="two">&</span>
+    <span class="three">Family</span>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav class="twonavbar" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+  <div class="gallery-item">
+    <img src="image/image copy.png" alt="Image 1">
+    <h3>Mummy</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="image/image.png" alt="Image 2">
+    <h3>Papa</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="image/WhatsApp Image 2025-03-25 at 8.57.30 PM (1).jpeg" alt="Image 3">
+    <h3>First Sister</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="image/image copy 2.png" alt="Image 3">
+    <h3>Second Sister</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="image/image copy 3.png" alt="Image 3">
+    <h3>Last Sister</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="image/image copy 4.png" alt="Image 3">
+    <h3>Grand Father</h3>
+  </div>
+  <div class="gallery-item">
+    <img src="image/image copy 5.png" alt="Image 3">
+    <h3>Grand Mother</h3>
+  </div>
+  <!-- Add more images here -->
+</section>
+
+<footer>
+  <div class="foo">
+    &copy;Made By Himanshu Kumar
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

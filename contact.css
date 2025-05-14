@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;  /* Prevent horizontal scroll */
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.one {
+  color: red;
+  font-weight: 900;
+}
+.two {
+  color: white;
+  font-weight: 900;
+}
+.three {
+  color: blue;
+  font-weight: 900;
+}
+
+.onenavbar {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.twonavbar {
+  display: flex;
+}
+
+.twonavbar a {
+  padding: 10px 20px;
+  font-size: 22px;
+  text-decoration: none;
+  color: yellow;
+  font-weight: 900;
+  margin-right: 1.5rem;
+  border-bottom: 2.5px solid  #1e1e2f;
+}
+
+.twonavbar a:hover {
+  border-bottom: 2.5px solid red;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+/* Footer Styling */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  .twonavbar {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .twonavbar a {
+    margin: 10px 0;
+    font-size: 20px;
+    margin-right: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .twonavbar.active {
+    display: flex;
+  }
+
+ 
+}
+@media (max-width: 768px) {
+  body {
+    background-color: black;
+  }
+
+  
+}
+/* Responsive Styling for Phones */
+@media (max-width: 768px) {
+  /* Header background color for phones */
+  header {
+    background-color: #1e1e2f; /* Dark Slate */
+  }
+
+  /* Text inside header stays readable */
+  .one {
+    color: red;
+  }
+  .two{
+    color: white;
+  }
+  .three{
+    color: blue;
+  }
+
+  /* Hamburger menu icon color */
+  .hamburger {
+    color: white;
+  }
+
+  /* Optional: body background color on phone */
+  body {
+    background-color: black;
+    color: white; /* Keep text readable */
+  }
+
+  /* Optional: navbar background for clarity */
+  .twonavbar {
+    background-color: #1e1e2f;
+  }
+}
+
+
+
+
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+/* Contact Section */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: red;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 20px 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* This makes sure the content takes all available space above footer */
+main, .contact-section {
+  flex: 1;
+}

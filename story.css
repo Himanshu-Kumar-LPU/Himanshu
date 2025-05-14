@@ -1,0 +1,189 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* PAGE STRUCTURE */
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER and FOOTER should not shrink */
+header,
+footer {
+  flex-shrink: 0;
+}
+
+/* MAIN CONTENT AREA */
+.our-story {
+  flex-grow: 1; /* Ensures it grows to take available space */
+  padding: 60px 20px;
+  margin-top: auto; /* Push the footer down if content is less */
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.onenavbar {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.one {
+  color: red;
+  font-weight: 900;
+}
+
+.two {
+  color: white;
+  font-weight: 900;
+}
+
+.three {
+  color: blue;
+  font-weight: 900;
+}
+
+/* NAVIGATION */
+.twonavbar {
+  display: flex;
+}
+
+.twonavbar a {
+  padding: 10px 20px;
+  font-size: 22px;
+  text-decoration: none;
+  color: yellow;
+  font-weight: 900;
+  margin-right: 1.5rem;
+  border-bottom: 2.5px solid #1e1e2f;
+}
+
+.twonavbar a:hover {
+  border-bottom: 2.5px solid red;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* OUR STORY SECTION */
+.our-story {
+  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  color: #2c3e50;
+}
+
+.our-story .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.our-story h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #1e1e2f;
+  position: relative;
+}
+
+.our-story h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #3498db;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.our-story p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .twonavbar {
+    display: none;
+    flex-direction: column;
+    background-color: #1e1e2f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .twonavbar a {
+    margin: 10px 0;
+    font-size: 20px;
+    margin-right: 0;
+  }
+
+  .twonavbar.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    background-color: #1e1e2f;
+  }
+
+  .one { color: red; }
+  .two { color: white; }
+  .three { color: blue; }
+
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  .our-story {
+    padding: 40px 15px;
+  }
+
+  .our-story h2 {
+    font-size: 28px;
+  }
+
+  .our-story p {
+    font-size: 16px;
+  }
+}
